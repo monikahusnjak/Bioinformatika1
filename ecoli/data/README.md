@@ -20,8 +20,12 @@ This file is not included in the repository because of its size.
 
 Download it from:
 
+```text
 GitHub Releases -> Bioinformatics Project Dataset
+```
 
 and place it in this directory:
 
+```text
 ecoli/data/ecoli_simulated_reads.fasta
+```
