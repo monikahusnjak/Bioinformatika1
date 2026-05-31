@@ -7,44 +7,53 @@ The pipeline was tested on two datasets:
 * Lambda genome
 * E-coli genome
 
-
 ## Requirements
 
 The following software must be installed:
 
+```bash
 sudo apt update
 sudo apt install g++ samtools minimap2
+```
 
 ## Clone Repository
 
+```bash
 git clone https://github.com/monikahusnjak/Bioinformatics-1.git
 cd Bioinformatics-1
-
+```
 
 ## Large Files
 
 The file:
 
+```text
 ecoli/data/ecoli_simulated_reads.fasta
+```
 
 is not included in the repository because of its size.
 
 Download it from:
 
+```text
 Releases -> Bioinformatics Project Dataset
+```
 
 and place it in:
 
+```text
 ecoli/data/ecoli_simulated_reads.fasta
+```
 
 before running the E. coli pipeline.
 
-
 ## Running the E. coli Pipeline
 
+```bash
 cd ecoli
 chmod +x run.sh
 ./run.sh
+```
 
 The script performs:
 
@@ -58,18 +67,19 @@ The script performs:
 
 Output files are generated automatically.
 
-
 ## Running the Lambda Pipeline
 
+```bash
 cd lambda
 chmod +x run.sh
 ./run.sh
+```
 
 The same workflow is applied to the lambda dataset.
 
-
 ## Pipeline Overview
 
+```text
 Reference genome
         ↓
 Read alignment (Minimap2)
@@ -87,5 +97,6 @@ Read alignment (Minimap2)
 candidate variants
         ↓
  variant caller
-        ↓  
+        ↓
  final variants
+```
