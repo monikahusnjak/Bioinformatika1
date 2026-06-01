@@ -183,7 +183,7 @@ int main() {
             else if (op=='I') {
                 for (int j=0;j<num;j++) {
                     char base = std::toupper(seq[seq_idx]);
-                    variant_counts[{pos,'I'}][base]++;
+                    variant_counts[{pos - 1,'I'}][base]++;
                     seq_idx++;
                 }
             }
